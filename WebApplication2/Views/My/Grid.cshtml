@@ -1,0 +1,24 @@
+﻿@model List<WebApplication2.Models.form1>
+   @using (Html.BeginForm("Grid", "My", FormMethod.Post))
+   {
+<table border="2" width="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>MAIL ID</th>
+        <th>COURSE</th>
+    </tr>
+    @foreach (var v in Model)
+    {
+                <tr>
+                    <td>@v.id</td>
+                    <td>@v.name</td>
+                    <td>@v.age</td>
+                    <td>@v.mailid</td>
+                    <td>@v.course</td>
+                </tr>
+    }
+   </table>
+   }
+

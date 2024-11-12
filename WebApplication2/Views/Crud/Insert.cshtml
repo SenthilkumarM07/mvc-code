@@ -1,0 +1,30 @@
+﻿@model WebApplication2.Models.Register
+@using(Html.BeginForm("Insert","Crud",FormMethod.Post))
+            {
+                <table border="2">
+                    <tr>
+                        <tH>ID</tH>
+                        <td>@Html.TextBoxFor(n => n.id)</td>
+                    </tr>
+                    <tr>
+
+                        <tH>NAME</tH>
+                        <td>@Html.TextBoxFor(n => n.name)</td>
+                    </tr>
+                    <tr>
+
+                        <tH>DEPT</tH>
+                        <td>@Html.TextBoxFor(n => n.dept)</td>
+                    </tr>
+                    <tr>
+
+                        <tH>YOP</tH>
+                        <td>@Html.TextBoxFor(n => n.yop)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><input type="submit" value="Insert"></center></td>
+                    </tr>
+
+                </table>
+            }
+

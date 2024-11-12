@@ -1,0 +1,38 @@
+﻿@model WebApplication2.Models.form1
+
+
+@using (Html.BeginForm("Insert", "My", FormMethod.Post))//@using (Html.BeginForm("actionresult name", "controller name", FormMethod.Post))
+{
+    <table border="1">
+        <tr>
+            <tH>ID</tH>
+           <td>@Html.TextBoxFor(n => n.id)</td>
+        </tr>
+        <tr>
+
+            <tH>NAME</tH>
+            <td>@Html.TextBoxFor(n => n.name)</td>
+        </tr>
+        <tr>
+
+            <tH>AGE</tH>
+            <td>@Html.TextBoxFor(n => n.age)</td>
+        </tr>
+        <tr>
+
+            <tH>MAIL ID</tH>
+            <td>@Html.TextBoxFor(n   => n.mailid)</td>
+        </tr>
+
+        <tr>
+
+            <tH>COURSE</tH>
+            <td>@Html.TextBoxFor(n => n.course)</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><center><input type="submit" value="Submit"></center></td>
+        </tr>
+
+    </table>
+}

@@ -1,0 +1,28 @@
+﻿@model WebApplication2.Models.Register
+
+@using(Html.BeginForm("Update","Crud",FormMethod.Post)) //@using (Html.BeginForm("Insert", "My", FormMethod.Post))
+            {
+                <table border="2">
+
+                    <tr>
+                        <th>ID</th>
+                        <td>@Html.TextAreaFor(i=>i.id)</td>
+                    </tr>
+                    <tr>
+                        <th>U_NAME</th>
+                        <td>@Html.TextAreaFor(i=>i.name)</td>
+                    </tr>
+                    <tr>
+                        <th>U_DEPT</th>
+                        <td>@Html.TextAreaFor(i=>i.dept)</td>
+                    </tr>
+                    <tr>
+                        <th>U_YOP</th>
+                        <td>@Html.TextAreaFor(i=>i.yop)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><input type="submit" value="Update"></center></td>
+                    </tr>
+                </table>
+
+            }

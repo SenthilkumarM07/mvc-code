@@ -1,0 +1,19 @@
+﻿@model IEnumerable <WebApplication2.Models.VelTech>
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>dept</th>
+    </tr>
+    @foreach (var li in Model)
+    {
+        <tr>
+            <td>@li.id</td>
+            <td>@li.name</td>
+            <td>@li.age</td>
+            <td>@li.dept</td>
+        </tr>
+    }
+ </table>

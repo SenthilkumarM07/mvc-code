@@ -1,0 +1,15 @@
+﻿@model WebApplication2.Models.form1
+
+
+@using (Html.BeginForm("ShowIdGRid", "My", FormMethod.Post))
+{
+    <table border="1">
+
+        <tr>
+            <th>Enter ID:</th>
+            <td>@Html.TextBoxFor(s => s.id)</td>
+            <td colspan="2"><center><input type="submit" value="submit" /></center></td>
+        </tr>
+    </table>      
+}
+

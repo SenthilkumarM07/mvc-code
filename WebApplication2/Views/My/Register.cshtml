@@ -1,0 +1,31 @@
+﻿@model  IEnumerable<WebApplication2.Models.Register>
+
+<html>
+<head>
+    <title>hi</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>DEPT</th>
+            <th>CGPA</th>
+        </tr>
+        @foreach (var l in Model)
+        {
+            <tr>
+            <td>@l.std_id</td>
+            <td>@l.std_name</td>
+            <td>@l.std_age</td>
+            <td>@l.std_dept</td>
+            <td>@l.std_cgpa</td>
+        </tr>
+        }
+
+
+    </table>
+
+</body>
+</html>
